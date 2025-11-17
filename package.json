@@ -4,6 +4,8 @@
   "description": "Begrüßung zur Weihnachtsfeier 2025",
   "main": "index.html",
   "scripts": {
+    "clean": "rimraf  dist",
+   
     "test": "echo \"Error: no test specified\" && exit 1",
     "css:scss": "node-sass --output-style compressed -o dist src/scss",
     "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
@@ -60,5 +62,8 @@
     "imagemin-cli": "^8.0.0",
     "moment": "^2.30.1",
     "uuid": "^7.0.3"
+  },
+  "overrides": {
+    "rimraf": "^6.0.1"
   }
 }
